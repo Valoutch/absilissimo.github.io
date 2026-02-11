@@ -1,29 +1,16 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  
-  <!-- Fichiers CSS -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  
-  <!-- FontAwesome pour les icônes -->
-  <script src="https://kit.fontawesome.com/8fac2d5d26.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <!-- Navigation -->
-  {% include navigation.html %}
-
-  <!-- Contenu principal -->
-  <div class="paper">
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/8fac2d5d26.js" crossorigin="anonymous"></script>
+    <script src="/_sass/script.js"></script>
+    {% include navigation.html %}
+  </head>
+  <body>
     {{ content }}
-  </div>
-  
-  <!-- Pied de page -->
+  </body>
   <footer>
     {% include footer.html %}
   </footer>
-  
-</body>
 </html>
